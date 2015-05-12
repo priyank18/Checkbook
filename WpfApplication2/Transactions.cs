@@ -45,8 +45,8 @@ namespace Model
             set { _Account = value; OnPropertyChanged(); }
         }
 
-        private double _Amount;
-        public double Amount
+        private decimal _Amount;
+        public decimal Amount
         {
             get { return _Amount; }
             set { _Amount = value; OnPropertyChanged(); OnPropertyChanged("Currency2"); }
