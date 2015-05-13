@@ -24,6 +24,14 @@ namespace CheckBook
             set { _CurrentPage = value; OnPropertyChanged(); OnPropertyChanged("CurrentTransactions"); }
         }
 
+        private Transaction _newTransaction = new Transaction {Date = DateTime.Now};
+        public Transaction newTransaction 
+        {
+            get { return _newTransaction; } 
+            set { _newTransaction = value; OnPropertyChanged(); }
+
+        }
+
         private ObservableCollection<Transaction> _Transactions;
         public ObservableCollection<Transaction> Transactions
         {

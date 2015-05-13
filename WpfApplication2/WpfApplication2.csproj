@@ -60,9 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Migrations\201505121937449_initial.cs" />
-    <Compile Include="Migrations\201505121937449_initial.Designer.cs">
-      <DependentUpon>201505121937449_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201505122350050_initial.cs" />
+    <Compile Include="Migrations\201505122350050_initial.Designer.cs">
+      <DependentUpon>201505122350050_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Transactions.cs" />
@@ -96,8 +96,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201505121937449_initial.resx">
-      <DependentUpon>201505121937449_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201505122350050_initial.resx">
+      <DependentUpon>201505122350050_initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -27,7 +27,7 @@ namespace WpfApplication2.Migrations
                         Date = c.DateTime(nullable: false),
                         Payee = c.String(),
                         AccountId = c.Int(nullable: false),
-                        Amount = c.Double(nullable: false),
+                        Amount = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Tag = c.String(),
                     })
                 .PrimaryKey(t => t.Id)
