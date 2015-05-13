@@ -68,7 +68,7 @@ namespace CheckBook
                 return new DelegateCommand
                 {
                     ExecuteFunction = _ => _Db.SaveChanges(),
-                    CanExecuteFunction = _ => _Db.ChangeTracker.HasChanges()
+                    CanExecuteFunction = _ => _newTransaction.Account !=null && _newTransaction.Amount !=null//_Db.ChangeTracker.HasChanges()
                 };
             }
         }
