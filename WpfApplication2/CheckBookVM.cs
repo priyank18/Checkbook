@@ -7,7 +7,8 @@ using Model;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using System.Windows;
-
+using System.Media;
+using WpfApplication2;
 namespace CheckBook
 {
     public class CheckBookVM : BaseVM
@@ -15,7 +16,7 @@ namespace CheckBook
         public CheckBookVM()
         {
         }
-
+        
         CbDb _Db = new CbDb();
 
         private int _RowsPerPage = 5;
@@ -87,8 +88,7 @@ namespace CheckBook
                 return _SaveTransaction;
             }
         }
-
-        public DelegateCommand NewTransaction
+         public DelegateCommand NewTransaction
         {
             get
             {
@@ -102,6 +102,7 @@ namespace CheckBook
                 };
             }
         }
+        
 
        private string _Name;
 

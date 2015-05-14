@@ -1,0 +1,4 @@
+Priyank | Checkbook Pre- Final
+
+To change the color of highest payee amount I have used Brush class in System.Media.Brushes, to accomplish the goal my method was to find the amount value in the transaction Data Grid, a simple algorithm to find the highest amount by comparing each value in the amount coloumn and then setting the highest row background to color red.
+In implementation there were many difficulties in locating the row with the amount value and also there were issue with importing brush class.

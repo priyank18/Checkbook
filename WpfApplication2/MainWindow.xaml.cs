@@ -14,6 +14,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Media;
+using CheckBook;
 namespace WpfApplication2
 {
     /// <summary>
@@ -31,6 +33,18 @@ namespace WpfApplication2
             var VM = new CheckBookVM();
             DataContext = VM;
             VM.Fill();
+            
+            // For changing the color of highest row
+            
+            /*var highest = amountColumn.SetCurrentValue;
+            for(int row = 0; row < transactionsDataGrid.FrozenColumnCount-1; row++)
+            {
+                if(highest > amountColumn.GetValue)
+                {
+                    highest = amountColumn.SetCurrentValue;
+                }
+             highest.amountRow = Color.Red;
+            }*/
         }
     }
 }
